@@ -23,5 +23,5 @@ O projeto foi estruturado seguindo princípios de **Clean Code** e separação d
 Clone o repositório e execute o pipeline via linha de comando informando os arquivos de entrada e saída:
 
 ```bash
-python -m desafio1.main --entrada caminho/entrada.csv --saida caminho/saida_tratada.csv --relatorio caminho/relatorio.csv
+python3 -m desafio1.main --entrada desafio1/dados_sujos.csv --saida desafio1/dados_tratados.csv --relatorio desafio1/relatorio_qualidade.csv
 ```
