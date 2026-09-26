@@ -1,0 +1,20 @@
+matricula,nome_participante,email_institucional,status_programa_corporativo,status_base_powerbi,data_matricula,data_conclusao,id_sistema_externo
+M0001,Ana Paula Souza,ana.souza@edepe.sp.gov.br,Concluido,Concluído,15/03/2023,20/06/2023,SIS-8841
+M0001,Ana Paula Souza,ana.souza@edepe.sp.gov.br,Concluído,Em andamento,10/01/2023,,SIS-8841
+M0002,Bruno Lima,bruno.lima@edepe.sp.gov.br,em andamento,Em andamento,2023-02-10,,N/A
+M0003,,carla@edepe,Matriculado,Matriculado,05/04/2023,,SIS-9012
+M0004,Diego Ferreira,diego.ferreira@edepe.sp.gov.br,CANCELADO,Cancelado,01/02/2023,,ERRO_SYNC
+M0005,Elaine Costa,ELAINE.COSTA@EDEPE.SP.GOV.BR,concluido,Desconhecido,12/11/2022,30/01/2023,SIS-7723
+M0006,Fábio Nogueira,fabio.nogueira#edepe.sp.gov.br,Em Andamento,Em andamento,,,PENDENTE
+M0007,Giovana Ramos,giovana.ramos@edepe.sp.gov.br,Trancado,Cancelado,18/05/2023,,SIS-6650
+,Henrique Alves,henrique.alves@edepe.sp.gov.br,Matriculado,Matriculado,22/03/2023,,SIS-5544
+,Isabela Martins,isabela.martins@edepe.sp.gov.br,Concluído,Concluído,01/04/2023,15/07/2023,
+M0008,João Pedro Silva,joao.silva@edepe.sp.gov.br,concluído,Concluído,31/13/2023,,SIS-3321
+M0009,   ,karina.dias@edepe.sp.gov.br,Matriculado,Matriculado,09/09/2023,,N/A
+M0010,Lucas Andrade,lucas.andrade@edepe.sp.gov.br,Cancelado,Em andamento,14/02/2023,,SIS-4432
+M0011,Mariana Torres,mariana.torres@edepe.sp.gov.br,Concluido,Concluído,2023-05-01,2023-08-20,SIS-1123
+M0011,Mariana Torres,mariana.torres@edepe.sp.gov.br,Concluído,Concluído,2023-05-15,2023-08-20,SIS-1123
+M0012,Natália Freitas,natalia.freitas@edepe.sp.gov.br,em andamento,Em andamento,19/06/2023,,ERRO_SYNC
+M0013,Otávio Barros,otavio.barros@edepe.sp.gov.br,Matriculado,Cancelado,25/07/2023,,SIS-2299
+M0014,Patrícia Nunes,patricia.nunes@,Concluído,Concluído,03/03/2023,10/06/2023,SIS-8890
+M0015,Rafael Gomes,rafael.gomes@edepe.sp.gov.br,ativo,Em andamento,08/08/2023,,SIS-1010
