@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 def carregar_dados(caminho: Path) -> pd.DataFrame:
     logger.info("Lendo arquivo de entrada: %s", caminho)
-    return pd.read_csv(caminho)
+    return pd.read_csv(caminho, dtype=str)
 
 
 def salvar_dados(df: pd.DataFrame, caminho: Path) -> None:
