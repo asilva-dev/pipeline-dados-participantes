@@ -25,3 +25,17 @@ Clone o repositório e execute o pipeline via linha de comando informando os arq
 ```bash
 python3 -m desafio1.main --entrada desafio1/dados_sujos.csv --saida desafio1/dados_tratados.csv --relatorio desafio1/relatorio_qualidade.csv
 ```
+
+## Escopo: implementado vs. proposto
+
+**Implementado:** validação de schema, isolamento de registros sem matrícula,
+deduplicação determinística por data, normalização de campos, reconciliação
+de status (AVA como fonte de verdade), separação entre ID externo e status de
+sincronização e relatório de qualidade por execução.
+
+**Proposto (não implementado):** banco relacional, carga idempotente (MERGE),
+camadas persistidas, quarentena de registros rejeitados, consumo real da API,
+alertas e orquestração.
+
+**Testes:** as funções são puras e foram desenhadas para teste unitário, mas
+a suíte de testes automatizados ainda não foi escrita.

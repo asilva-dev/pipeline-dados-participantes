@@ -1,18 +1,18 @@
-matricula,nome_participante,email_institucional,status_programa_corporativo,status_base_powerbi,data_matricula,data_conclusao,id_sistema_externo,email_valido,divergencia_status,status_unificado_ssot,status_sincronizacao
-M0006,Fábio Nogueira,,Em andamento,Em andamento,,,,False,False,Em andamento,PENDENTE
-M0008,João Pedro Silva,joao.silva@edepe.sp.gov.br,Concluído,Concluído,,,SIS-3321,True,False,Concluído,SINCRONIZADO
-M0005,Elaine Costa,elaine.costa@edepe.sp.gov.br,Concluído,Desconhecido,2022-11-12,2023-01-30,SIS-7723,True,True,Concluído,SINCRONIZADO
-M0004,Diego Ferreira,diego.ferreira@edepe.sp.gov.br,Cancelado,Cancelado,2023-02-01,,,True,False,Cancelado,PENDENTE
-M0002,Bruno Lima,bruno.lima@edepe.sp.gov.br,Em andamento,Em andamento,2023-02-10,,,True,False,Em andamento,PENDENTE
-M0010,Lucas Andrade,lucas.andrade@edepe.sp.gov.br,Cancelado,Em andamento,2023-02-14,,SIS-4432,True,True,Cancelado,SINCRONIZADO
-M0014,Patrícia Nunes,,Concluído,Concluído,2023-03-03,2023-06-10,SIS-8890,False,False,Concluído,SINCRONIZADO
-M0001,Ana Paula Souza,ana.souza@edepe.sp.gov.br,Concluído,Concluído,2023-03-15,2023-06-20,SIS-8841,True,False,Concluído,SINCRONIZADO
-M0003,Não Informado,,Matriculado,Matriculado,2023-04-05,,SIS-9012,False,False,Matriculado,SINCRONIZADO
-M0011,Mariana Torres,mariana.torres@edepe.sp.gov.br,Concluído,Concluído,2023-05-15,2023-08-20,SIS-1123,True,False,Concluído,SINCRONIZADO
-M0007,Giovana Ramos,giovana.ramos@edepe.sp.gov.br,Desconhecido,Cancelado,2023-05-18,,SIS-6650,True,True,Desconhecido,SINCRONIZADO
-M0012,Natália Freitas,natalia.freitas@edepe.sp.gov.br,Em andamento,Em andamento,2023-06-19,,,True,False,Em andamento,PENDENTE
-M0013,Otávio Barros,otavio.barros@edepe.sp.gov.br,Matriculado,Cancelado,2023-07-25,,SIS-2299,True,True,Matriculado,SINCRONIZADO
-M0015,Rafael Gomes,rafael.gomes@edepe.sp.gov.br,Desconhecido,Em andamento,2023-08-08,,SIS-1010,True,True,Desconhecido,SINCRONIZADO
-M0009,Não Informado,karina.dias@edepe.sp.gov.br,Matriculado,Matriculado,2023-09-09,,,True,False,Matriculado,PENDENTE
-,Henrique Alves,henrique.alves@edepe.sp.gov.br,Matriculado,Matriculado,2023-03-22,,SIS-5544,True,False,Matriculado,SINCRONIZADO
-,Isabela Martins,isabela.martins@edepe.sp.gov.br,Concluído,Concluído,2023-04-01,2023-07-15,,True,False,Concluído,PENDENTE
+matricula,nome_participante,email_institucional,status_programa_corporativo,status_base_powerbi,data_matricula,data_conclusao,id_sistema_externo,nome_valido,email_valido,divergencia_status,status_unificado_ssot,status_sincronizacao
+M0006,Fábio Nogueira,,Em andamento,Em andamento,,,,True,False,False,Em andamento,PENDENTE
+M0008,João Pedro Silva,joao.silva@edepe.sp.gov.br,Concluído,Concluído,,,SIS-3321,True,True,False,Concluído,SINCRONIZADO
+M0005,Elaine Costa,elaine.costa@edepe.sp.gov.br,Concluído,Desconhecido,2022-11-12,2023-01-30,SIS-7723,True,True,True,Concluído,SINCRONIZADO
+M0004,Diego Ferreira,diego.ferreira@edepe.sp.gov.br,Cancelado,Cancelado,2023-02-01,,,True,True,False,Cancelado,PENDENTE
+M0002,Bruno Lima,bruno.lima@edepe.sp.gov.br,Em andamento,Em andamento,2023-02-10,,,True,True,False,Em andamento,PENDENTE
+M0010,Lucas Andrade,lucas.andrade@edepe.sp.gov.br,Cancelado,Em andamento,2023-02-14,,SIS-4432,True,True,True,Cancelado,SINCRONIZADO
+M0014,Patrícia Nunes,,Concluído,Concluído,2023-03-03,2023-06-10,SIS-8890,True,False,False,Concluído,SINCRONIZADO
+M0001,Ana Paula Souza,ana.souza@edepe.sp.gov.br,Concluído,Concluído,2023-03-15,2023-06-20,SIS-8841,True,True,False,Concluído,SINCRONIZADO
+M0003,,,Matriculado,Matriculado,2023-04-05,,SIS-9012,False,False,False,Matriculado,SINCRONIZADO
+M0011,Mariana Torres,mariana.torres@edepe.sp.gov.br,Concluído,Concluído,2023-05-15,2023-08-20,SIS-1123,True,True,False,Concluído,SINCRONIZADO
+M0007,Giovana Ramos,giovana.ramos@edepe.sp.gov.br,Desconhecido,Cancelado,2023-05-18,,SIS-6650,True,True,True,Desconhecido,SINCRONIZADO
+M0012,Natália Freitas,natalia.freitas@edepe.sp.gov.br,Em andamento,Em andamento,2023-06-19,,,True,True,False,Em andamento,PENDENTE
+M0013,Otávio Barros,otavio.barros@edepe.sp.gov.br,Matriculado,Cancelado,2023-07-25,,SIS-2299,True,True,True,Matriculado,SINCRONIZADO
+M0015,Rafael Gomes,rafael.gomes@edepe.sp.gov.br,Desconhecido,Em andamento,2023-08-08,,SIS-1010,True,True,True,Desconhecido,SINCRONIZADO
+M0009,,karina.dias@edepe.sp.gov.br,Matriculado,Matriculado,2023-09-09,,,False,True,False,Matriculado,PENDENTE
+,Henrique Alves,henrique.alves@edepe.sp.gov.br,Matriculado,Matriculado,2023-03-22,,SIS-5544,True,True,False,Matriculado,SINCRONIZADO
+,Isabela Martins,isabela.martins@edepe.sp.gov.br,Concluído,Concluído,2023-04-01,2023-07-15,,True,True,False,Concluído,PENDENTE
