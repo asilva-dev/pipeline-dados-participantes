@@ -7,6 +7,8 @@ dependem de DataFrame, arquivo ou estado externo.
 
 from __future__ import annotations
 
+import re
+
 import pandas as pd
 
 from desafio1.config import EMAIL_PATTERN, STATUS_MAP
@@ -47,13 +49,20 @@ def normalizar_status(valor: object, contador_desconhecidos: dict[str, int]) -> 
     return status
 
 
-def normalizar_data(valor: object) -> str:
-    """Converte datas para ISO (YYYY-MM-DD); retorna vazio se inválida.
+def parse_data(valor: object) -> pd.Timestamp:
+    """Interpreta a data sem ambiguidade: ISO (AAAA-MM-DD) ou BR (DD/MM/AAAA).
 
-    Usa format="mixed" porque a base de origem mistura formatos
-    (DD/MM/AAAA vindo do Programa Corporativo e AAAA-MM-DD vindo de
-    outras integrações) — isso evita ambiguidade e o warning do pandas
-    ao tentar aplicar dayfirst em datas que já estão em ISO.
+    Formato explícito, em vez de dayfirst=True, porque o pandas pode trocar
+    dia e mês em datas ISO ambíguas (ex.: 2023-02-10 virar 2 de outubro),
+    dependendo da versão.
     """
-    data = pd.to_datetime(valor, errors="coerce", dayfirst=True, format="mixed")
+    texto = normalizar_texto(valor)
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", texto):
+        return pd.to_datetime(texto, format="%Y-%m-%d", errors="coerce")
+    return pd.to_datetime(texto, format="%d/%m/%Y", errors="coerce")
+
+
+def normalizar_data(valor: object) -> str:
+    """Converte datas para ISO (YYYY-MM-DD); retorna vazio se inválida."""
+    data = parse_data(valor)
     return "" if pd.isna(data) else data.strftime("%Y-%m-%d")

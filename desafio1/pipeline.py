@@ -14,6 +14,7 @@ import pandas as pd
 
 from desafio1.config import COLUNAS_OBRIGATORIAS, VALORES_ID_PENDENTE
 from desafio1.normalizadores import (
+    parse_data,
     normalizar_data,
     normalizar_email,
     normalizar_status,
@@ -61,9 +62,7 @@ def remover_duplicidades(
     """Mantém, por matrícula, o registro com a data de matrícula mais
     recente — em vez de confiar na ordem em que o arquivo chegou."""
     df = df.copy()
-    df["_data_matricula_ordenacao"] = pd.to_datetime(
-        df["data_matricula"], errors="coerce", dayfirst=True, format="mixed"
-    )
+    df["_data_matricula_ordenacao"] = df["data_matricula"].apply(parse_data)
     df = df.sort_values("_data_matricula_ordenacao", na_position="first")
 
     antes = len(df)
@@ -78,7 +77,7 @@ def normalizar_campos(df: pd.DataFrame, relatorio: RelatorioQualidade) -> pd.Dat
     df = df.copy()
 
     df["nome_participante"] = df["nome_participante"].apply(normalizar_texto)
-    df.loc[df["nome_participante"] == "", "nome_participante"] = "Não Informado"
+    df["nome_valido"] = df["nome_participante"] != ""
 
     df["email_institucional"] = df["email_institucional"].apply(normalizar_email)
     df["email_valido"] = df["email_institucional"] != ""
